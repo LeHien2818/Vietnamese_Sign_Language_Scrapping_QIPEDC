@@ -1,0 +1,329 @@
+<html><head>
+    <title>QIPEDC</title>
+    <!-- bootstrap -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/animate.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css"> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/> -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> -->
+    <script type="text/javascript" src="/jquery/jquery-3.4.1.slim.min.js"></script>
+    <script type="text/javascript" src="/jquery/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="/jquery/jquery.sticky.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script type="text/javascript" src="/bootstrap/js/bootstrap.min.js"></script>
+    <!-- <script type="text/javascript" charset="utf8" src="/jquery/jquery.dataTables.js"></script> -->
+    <script type="text/javascript" charset="utf8" src="/jquery/pagination.min.js"></script>
+    <!-- end bootstrap -->
+    <!-- custom css -->
+    <link rel="stylesheet" href="/css/font.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-3X0LTKC5RB"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-3X0LTKC5RB');
+    </script>
+<link rel="stylesheet" type="text/css" href="/css/modalImage.css"></head>
+
+
+<body>
+    <style type="text/css">
+.myFixed {
+    background-color: #196e90;
+    z-index: 1;
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+</style>
+<section id="navigator" style="background-color: #196e90; z-index: 1; width: 100%;">
+    <nav class="container navbar navbar-expand-lg navbar-light py-0">
+        <img class="navbar-brand p-0" src="/images/logo.png" style="height: 90px;max-width: 100%">
+        <!-- <a class="navbar-brand f-f-Gilroy-Heavy py-0" href="/" style="color: #FFF; font-size: 48px">QIPEDC</a> -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item" id="menuItem0">
+                    <a class="nav-link" href="/">Trang chủ <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item" id="menuItem1">
+                    <a class="nav-link" href="/introduce">Giới thiệu <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown" id="menuItem2">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Ngôn ngữ ký hiệu
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="/slang1">Giới thiệu về NNKH</a>
+                        <a class="dropdown-item" href="/slang2">Danh mục NNKH</a>
+                        <a class="dropdown-item" href="/dictionary">Video 4000 từ</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown" id="menuItem3">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Củng cố kiến thức
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="/consolidate">150 bài giảng</a>
+                        <a class="dropdown-item" href="/videos">Các video khác</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown" id="menuItem4">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Đào tạo, bồi dưỡng
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="/edu1">Phụ huynh/người bảo trợ</a>
+                        <a class="dropdown-item" href="/edu2">Giáo viên, trợ giảng</a>
+                        <a class="dropdown-item" href="/congvan">Công văn, Tài liệu</a>
+                    </div>
+                </li>
+                <li class="nav-item" id="menuItem5">
+                    <a class="nav-link" href="/news">Tin tức<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item" id="menuItem6">
+                    <a class="nav-link" href="/contact">Liên hệ<span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0 d-none">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+</section>
+<script type="text/javascript">
+$(document).ready(function() {
+    var locs = ['/', '/introduce', '/language', '/consolidate', '/education', '/news', '/contact'];
+    var items = $('.nav-item');
+    items[0].onclick = function() { window.location = locs[0]; };
+    items[1].onclick = function() { window.location = locs[1]; };
+    // items[2].onclick = function() { window.location = locs[2]; };
+    // items[3].onclick = function() { window.location = locs[3]; };
+    // items[4].onclick = function() { window.location = locs[4]; };
+    items[5].onclick = function() { window.location = locs[5]; };
+    items[6].onclick = function() { window.location = locs[6]; };
+    if (window.location.pathname == '/') $('#' + items[0].id).addClass('active');
+    else if (window.location.pathname == '/introduce') $('#' + items[1].id).addClass('active');
+    else if (window.location.pathname == '/slang1') $('#' + items[2].id).addClass('active');
+    else if (window.location.pathname == '/slang2') $('#' + items[2].id).addClass('active');
+    else if (window.location.pathname == '/consolidate') || (window.location.pathname == '/videos/') $('#' + items[3].id).addClass('active');
+    else if (window.location.pathname == '/edu1') $('#' + items[4].id).addClass('active');
+    else if (window.location.pathname == '/edu2') $('#' + items[4].id).addClass('active');
+    else if (window.location.pathname == '/congvan') $('#' + items[4].id).addClass('active');
+    else if ((window.location.pathname == '/news/') || (window.location.pathname == '/news/news-detail')) $('#' + items[5].id).addClass('active');
+    // else if  $('#' + items[5].id).addClass('active');
+    else if (window.location.pathname == '/contact') $('#' + items[6].id).addClass('active');
+    $("#navigator").sticky({
+        topSpacing: 0
+    });
+    $("#navigator-sticky-wrapper").css({
+        "position": "relative",
+        "height": "60px",
+        "z-index": "99"
+    });
+});
+</script>
+    <div class="modal fade bd-example-modal-lg" id="video-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header" style="background-color: #196e90">
+                    <h2 class="modal-title f-f-Lato-Heavy" style="color:#ffc767 " id="exampleModalLabel">Giải nghĩa từ</h2>
+                    <!--                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button> -->
+                </div>
+                <div class="modal-body">
+                    <div class="row pb-2">
+                        <span class="f-s-22 pt-3 f-f-Lato-Heavy col-9" id="explain"></span>
+                        <div class="col-3">
+                            <img src="#" style="border: 2px solid #ffc768;border-radius: 10px;" class="m-w-100 hover-scale" id="img-dictionary">
+                        </div>
+                    </div>
+                    <iframe id="s_expert" control="" src="" width="100%" height="500px" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                    <!-- <video controls="true" width="100%">
+    <source src="" type="video/mp4" />
+</video> -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="closeModal()">Đóng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="myModalImage" class="modalImage">
+        <span class="close">×</span>
+        <img class="modal-content-image" id="img01">
+        <!-- <div id="caption"></div> -->
+    </div>
+    <section id="view-lesson ">
+        <p class="f-s-24  pt-5 t-a-center  f-f-Lato-Black"><u>Danh mục ngôn ngữ ký hiệu</u></p>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-sm-7 dropdown " style="align-self: center;">
+                    <select class="custom-select f-f-Lato-Bold " onclick="onSearch()" id="group">
+                        <option class="f-f-Lato-Medium " value="20" selected="">20</option>
+                        <option class="f-f-Lato-Medium " value="40">40</option>
+                        <option class="f-f-Lato-Medium " value="60">60</option>
+                        <option class="f-f-Lato-Medium " value="80">80</option>
+                    </select>
+                </div>
+                <div class="col-lg-9 pt-2 col-sm-5 f-right">
+                    <input class="form-control mr-sm-2" onkeyup="inputSearch()" type="search" id="myInput" placeholder="Search">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row py-3" id="product">
+                <!-- 
+<a class="col-xl-3 col-lg-3 col-md-4 col-sm-6 hover-scale hover py-3" data-toggle="modal" data-target="#video-modal">
+    <p class="t-a-center f-s-18 f-f-Lato-Black mb-0">ác</p>
+    <img src="/images/banner.jpg" class="m-w-100">
+</a>
+
+<a class="col-xl-3 col-lg-3 col-md-4 col-sm-6 hover-scale hover py-3" data-toggle="modal" data-target="#video-modal">
+    <p class="t-a-center f-s-18 f-f-Lato-Black mb-0">ác</p>
+    <img src="/images/banner.jpg" class="m-w-100">
+</a>
+
+<a class="col-xl-3 col-lg-3 col-md-4 col-sm-6 hover-scale hover py-3" data-toggle="modal" data-target="#video-modal">
+    <p class="t-a-center f-s-18 f-f-Lato-Black mb-0">ác</p>
+    <img src="/images/banner.jpg" class="m-w-100">
+</a>
+
+<a class="col-xl-3 col-lg-3 col-md-4 col-sm-6 hover-scale hover py-3" data-toggle="modal" data-target="#video-modal">
+    <p class="t-a-center f-s-18 f-f-Lato-Black mb-0">ác</p>
+    <img src="/images/banner.jpg" class="m-w-100">
+</a>
+
+<a class="col-xl-3 col-lg-3 col-md-4 col-sm-6 hover-scale hover py-3" data-toggle="modal" data-target="#video-modal">
+    <p class="t-a-center f-s-18 f-f-Lato-Black mb-0">ác</p>
+    <img src="/images/banner.jpg" class="m-w-100">
+</a>
+
+<a class="col-xl-3 col-lg-3 col-md-4 col-sm-6 hover-scale hover py-3" data-toggle="modal" data-target="#video-modal">
+    <p class="t-a-center f-s-18 f-f-Lato-Black mb-0">ác</p>
+    <img src="/images/banner.jpg" class="m-w-100">
+</a>
+
+<a class="col-xl-3 col-lg-3 col-md-4 col-sm-6 hover-scale hover py-3" data-toggle="modal" data-target="#video-modal">
+    <p class="t-a-center f-s-18 f-f-Lato-Black mb-0">ác</p>
+    <img src="/images/banner.jpg" class="m-w-100">
+</a>
+
+<a class="col-xl-3 col-lg-3 col-md-4 col-sm-6 hover-scale hover py-3" data-toggle="modal" data-target="#video-modal">
+    <p class="t-a-center f-s-18 f-f-Lato-Black mb-0">ác</p>
+    <img src="/images/banner.jpg" class="m-w-100">
+</a>
+
+<a class="col-xl-3 col-lg-3 col-md-4 col-sm-6 hover-scale hover py-3" data-toggle="modal" data-target="#video-modal">
+    <p class="t-a-center f-s-18 f-f-Lato-Black mb-0">ác</p>
+    <img src="/images/banner.jpg" class="m-w-100">
+</a>
+
+<a class="col-xl-3 col-lg-3 col-md-4 col-sm-6 hover-scale hover py-3" data-toggle="modal" data-target="#video-modal">
+    <p class="t-a-center f-s-18 f-f-Lato-Black mb-0">ác</p>
+    <img src="/images/banner.jpg" class="m-w-100">
+</a>
+
+<a class="col-xl-3 col-lg-3 col-md-4 col-sm-6 hover-scale hover py-3" data-toggle="modal" data-target="#video-modal">
+    <p class="t-a-center f-s-18 f-f-Lato-Black mb-0">ác</p>
+    <img src="/images/banner.jpg" class="m-w-100">
+</a>
+
+<a class="col-xl-3 col-lg-3 col-md-4 col-sm-6 hover-scale hover py-3" data-toggle="modal" data-target="#video-modal">
+    <p class="t-a-center f-s-18 f-f-Lato-Black mb-0">ác</p>
+    <img src="/images/banner.jpg" class="m-w-100">
+</a>
+
+<a class="col-xl-3 col-lg-3 col-md-4 col-sm-6 hover-scale hover py-3" data-toggle="modal" data-target="#video-modal">
+    <p class="t-a-center f-s-18 f-f-Lato-Black mb-0">ác</p>
+    <img src="/images/banner.jpg" class="m-w-100">
+</a>
+
+<a class="col-xl-3 col-lg-3 col-md-4 col-sm-6 hover-scale hover py-3" data-toggle="modal" data-target="#video-modal">
+    <p class="t-a-center f-s-18 f-f-Lato-Black mb-0">ác</p>
+    <img src="/images/banner.jpg" class="m-w-100">
+</a>
+
+<a class="col-xl-3 col-lg-3 col-md-4 col-sm-6 hover-scale hover py-3" data-toggle="modal" data-target="#video-modal">
+    <p class="t-a-center f-s-18 f-f-Lato-Black mb-0">ác</p>
+    <img src="/images/banner.jpg" class="m-w-100">
+</a>
+ -->
+            </div>
+            <div class="container t-a-center pb-5 ">
+                <div id="pagination-wrapper">
+                </div>
+                <script src="/js/user/viewDictionary.js"></script>
+            </div>
+        </div>
+    </section>
+    <!-- Contact -->
+<section id="contact">
+    <div class="container ">
+        <div class="row">
+            <p class="f-s-42 col-12 t-c-white t-a-center f-f-Lato-Black pt-5">Liên hệ</p>
+            <div class="col-xl-12 col-sm-12 pb-5 t-a-center">
+                <!-- <p class="f-s-24 t-c-white f-f-Lato-Black"> BAN QUẢN LÝ CÁC DỰ ÁN BỘ GIÁO DỤC VÀ ĐÀO TẠO</p>
+                <p class="f-s-24 t-c-white f-f-Lato-Black">Địa chỉ: Số 35 Đại Cồ Việt, Phường Lê Đại Hành, Quận Hai Bà Trưng, Thành phố Hà Nội</p>
+                <p class="f-s-24 t-c-white f-f-Lato-Black">Hotline: 0976397971</p>
+                <p class="f-s-24 t-c-white f-f-Lato-Black">Email: qipedc.pmb@moet.gov.vn</p> -->
+                <p class="f-s-24 t-c-white f-f-Lato-Black">Nhân viên hỗ trợ: Vũ Tiến Đạt</p>
+                <p class="f-s-24 t-c-white f-f-Lato-Black">Email: datvu2404@gmail.com</p>
+                <p class="f-s-24 t-c-white f-f-Lato-Black">Điện thoại/Zalo: 0965568930</p>
+            </div>
+            <!-- <div class="col-xl-4 col-sm-12">
+                <p class="f-s-24 t-c-white f-f-Lato-Black" data-aos="fade-left">Fanpage:</p>
+                <p class="f-s-24 t-c-white f-f-Lato-Black" data-aos="fade-left">Website:</p>
+            </div> -->
+        </div>
+    </div>
+</section>
+<!--  -->
+<footer style="background-color: #165872">
+    <div class="container  c-white">
+        <div class="row justify-content-end">
+            <a href="" class="c-white mx-3">Term of use</a>
+            <a href="" class="c-white mx-3">Privacy &amp; cookies</a>
+            <a href="" class="c-white mx-3">Contact us</a>
+        </div>
+    </div>
+</footer>
+    <script type="text/javascript">
+    var modal = document.getElementById("myModalImage");
+
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img = document.getElementById("img-dictionary");
+    var modalImg = document.getElementById("img01");
+    // var captionText = document.getElementById("caption");
+    img.onclick = function() {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        $('#video-modal').modal('hide');
+        // captionText.innerHTML = this.alt;
+    }
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+        modal.style.display = "none";
+        $('#video-modal').modal('show');
+    }
+    </script>
+
+
+</body></html>
